@@ -268,8 +268,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>2.73375cm</Top>
-            <Left>2.98662cm</Left>
+            <Top>1.53375cm</Top>
+            <Left>0.92287cm</Left>
             <Height>1.8cm</Height>
             <Width>5cm</Width>
             <Style>
@@ -591,20 +591,6 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
-            <ChartTitles>
-              <ChartTitle Name="Default">
-                <Caption>Articulos vendidos </Caption>
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextAlign>Left</TextAlign>
-                  <VerticalAlign>Top</VerticalAlign>
-                  <Color>#a6a6a6</Color>
-                </Style>
-                <Position>TopLeft</Position>
-              </ChartTitle>
-            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -623,8 +609,8 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>2.73375cm</Top>
-            <Left>8.56933cm</Left>
+            <Top>1.53375cm</Top>
+            <Left>6.50558cm</Left>
             <Height>5cm</Height>
             <Width>7.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -637,14 +623,29 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
+          <Line Name="Line1">
+            <Top>0cm</Top>
+            <Height>0cm</Height>
+            <Width>17.15412cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
         </ReportItems>
         <Height>3.51353in</Height>
-        <Style />
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
       </Body>
       <Width>6.75359in</Width>
       <Page>
         <PageHeader>
-          <Height>1.04662cm</Height>
+          <Height>1.84037cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -655,21 +656,25 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value />
-                      <Style />
+                      <Value>ARTICULOS MÁS VENDIDOS </Value>
+                      <Style>
+                        <FontFamily>Arial Black</FontFamily>
+                        <FontSize>16pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.49099cm</Top>
-              <Left>2.16641cm</Left>
-              <Height>0.54708cm</Height>
-              <Width>10.72854cm</Width>
+              <Top>0.61419cm</Top>
+              <Left>4.33599cm</Left>
+              <Height>1.04979cm</Height>
+              <Width>8.92937cm</Width>
               <Style>
                 <Border>
-                  <Style>None</Style>
+                  <Style>Solid</Style>
                 </Border>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
@@ -680,20 +685,11 @@
           </ReportItems>
           <Style>
             <Border>
-              <Style>None</Style>
+              <Style>Solid</Style>
             </Border>
+            <BackgroundColor>CornflowerBlue</BackgroundColor>
           </Style>
         </PageHeader>
-        <PageFooter>
-          <Height>2.54cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>
