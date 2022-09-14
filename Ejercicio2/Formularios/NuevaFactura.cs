@@ -14,16 +14,14 @@ namespace Ejercicio2
 {
     public partial class Facturacion : Form
     {
-        private ConexionBD helper;
+        HelperDAO helper = HelperDAO.ObtenerInstancia();
         private Factura facturaN;
         public Facturacion()
         {
             InitializeComponent();
-            helper = new ConexionBD();
             facturaN = new Factura(); //se crea una nueva factura
             CargarArticulos();
             CargarFormaPago();
-            
         }
 
         private void CargarFormaPago()

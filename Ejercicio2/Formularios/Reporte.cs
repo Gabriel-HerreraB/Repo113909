@@ -13,16 +13,16 @@ namespace Ejercicio2.Formularios
 {
     public partial class Reporte : Form
     {
-        ConexionBD helper;
+        HelperDAO helper = HelperDAO.ObtenerInstancia();
         public Reporte()
         {
             InitializeComponent();
-            helper = new ConexionBD();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            txtFechaDesde.Text = DateTime.Now.AddDays(-30).ToString();
+            txtFechaHasta.Text = DateTime.Now.ToString();
             this.rvReporte.RefreshReport();
         }
 
@@ -38,5 +38,7 @@ namespace Ejercicio2.Formularios
             this.rvReporte.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", tabla));
             this.rvReporte.RefreshReport();
         }
+
+       
     }
 }

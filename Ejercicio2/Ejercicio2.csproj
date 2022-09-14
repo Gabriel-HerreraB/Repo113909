@@ -84,6 +84,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BajaLogicaDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datos\HelperDAO.cs" />
     <Compile Include="Datos\ConexionBD.cs" />
     <Compile Include="Dominio\Articulo.cs" />
     <Compile Include="Dominio\Detalle.cs" />

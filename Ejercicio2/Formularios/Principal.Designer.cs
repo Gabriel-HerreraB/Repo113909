@@ -69,7 +69,7 @@
             // tsmSalirApp
             // 
             this.tsmSalirApp.Name = "tsmSalirApp";
-            this.tsmSalirApp.Size = new System.Drawing.Size(180, 22);
+            this.tsmSalirApp.Size = new System.Drawing.Size(101, 22);
             this.tsmSalirApp.Text = "Salir";
             this.tsmSalirApp.Click += new System.EventHandler(this.tsmSalirApp_Click);
             // 
@@ -88,13 +88,13 @@
             // tsmNuevoArticulo
             // 
             this.tsmNuevoArticulo.Name = "tsmNuevoArticulo";
-            this.tsmNuevoArticulo.Size = new System.Drawing.Size(114, 22);
+            this.tsmNuevoArticulo.Size = new System.Drawing.Size(180, 22);
             this.tsmNuevoArticulo.Text = "Nuevo";
             // 
             // tsmEditarArticulo
             // 
             this.tsmEditarArticulo.Name = "tsmEditarArticulo";
-            this.tsmEditarArticulo.Size = new System.Drawing.Size(114, 22);
+            this.tsmEditarArticulo.Size = new System.Drawing.Size(180, 22);
             this.tsmEditarArticulo.Text = "Editar";
             // 
             // toolStripDropDownButton3
@@ -112,14 +112,14 @@
             // tsmNuevaFactura
             // 
             this.tsmNuevaFactura.Name = "tsmNuevaFactura";
-            this.tsmNuevaFactura.Size = new System.Drawing.Size(180, 22);
+            this.tsmNuevaFactura.Size = new System.Drawing.Size(142, 22);
             this.tsmNuevaFactura.Text = "Nuevo";
             this.tsmNuevaFactura.Click += new System.EventHandler(this.tsmNuevaFactura_Click);
             // 
             // tsmBajaLogica
             // 
             this.tsmBajaLogica.Name = "tsmBajaLogica";
-            this.tsmBajaLogica.Size = new System.Drawing.Size(180, 22);
+            this.tsmBajaLogica.Size = new System.Drawing.Size(142, 22);
             this.tsmBajaLogica.Text = "Baja Logica";
             this.tsmBajaLogica.Click += new System.EventHandler(this.tsmBajaLogica_Click);
             // 

@@ -13,13 +13,12 @@ using Ejercicio2.Dominio;
 namespace Ejercicio2.Formularios
 {
     public partial class frmBajaLogica : Form
-    {   
-        ConexionBD helper;
+    {
+        HelperDAO helper = HelperDAO.ObtenerInstancia();
         Factura facturaN;
         public frmBajaLogica()
         { 
             InitializeComponent();
-            helper = new ConexionBD();
             facturaN = new Factura();
         }
 
@@ -30,6 +29,7 @@ namespace Ejercicio2.Formularios
 
         public void CargarFacturas()
         {
+            
             DataTable table = helper.ConsultarSQL("SP_CARGAR_FACTURAS");
             cboFacturas.DataSource = table;
             //cboFacturas.DisplayMember = "nombre";
