@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Ejercicio2 {
+namespace Ejercicio2.Reportes {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace Ejercicio2 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("BajaLogicaDataSet2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("BajaLogicaDataSet3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class BajaLogicaDataSet2 : global::System.Data.DataSet {
+    public partial class BajaLogicaDataSet3 : global::System.Data.DataSet {
         
         private SP_DataSetDataTable tableSP_DataSet;
         
@@ -30,7 +30,7 @@ namespace Ejercicio2 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public BajaLogicaDataSet2() {
+        public BajaLogicaDataSet3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Ejercicio2 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected BajaLogicaDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected BajaLogicaDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace Ejercicio2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            BajaLogicaDataSet2 cln = ((BajaLogicaDataSet2)(base.Clone()));
+            BajaLogicaDataSet3 cln = ((BajaLogicaDataSet3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace Ejercicio2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "BajaLogicaDataSet2";
+            this.DataSetName = "BajaLogicaDataSet3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/BajaLogicaDataSet2.xsd";
+            this.Namespace = "http://tempuri.org/BajaLogicaDataSet3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableSP_DataSet = new SP_DataSetDataTable();
@@ -225,7 +225,7 @@ namespace Ejercicio2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            BajaLogicaDataSet2 ds = new BajaLogicaDataSet2();
+            BajaLogicaDataSet3 ds = new BajaLogicaDataSet3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -279,9 +279,9 @@ namespace Ejercicio2 {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class SP_DataSetDataTable : global::System.Data.TypedTableBase<SP_DataSetRow> {
             
-            private global::System.Data.DataColumn columnCliente;
+            private global::System.Data.DataColumn columnArticulo;
             
-            private global::System.Data.DataColumn columnCompras;
+            private global::System.Data.DataColumn columnCantidad;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -318,17 +318,17 @@ namespace Ejercicio2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ClienteColumn {
+            public global::System.Data.DataColumn ArticuloColumn {
                 get {
-                    return this.columnCliente;
+                    return this.columnArticulo;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ComprasColumn {
+            public global::System.Data.DataColumn CantidadColumn {
                 get {
-                    return this.columnCompras;
+                    return this.columnCantidad;
                 }
             }
             
@@ -369,11 +369,11 @@ namespace Ejercicio2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SP_DataSetRow AddSP_DataSetRow(string Cliente, int Compras) {
+            public SP_DataSetRow AddSP_DataSetRow(string Articulo, int Cantidad) {
                 SP_DataSetRow rowSP_DataSetRow = ((SP_DataSetRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Cliente,
-                        Compras};
+                        Articulo,
+                        Cantidad};
                 rowSP_DataSetRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSP_DataSetRow);
                 return rowSP_DataSetRow;
@@ -396,19 +396,19 @@ namespace Ejercicio2 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnCliente = base.Columns["Cliente"];
-                this.columnCompras = base.Columns["Compras"];
+                this.columnArticulo = base.Columns["Articulo"];
+                this.columnCantidad = base.Columns["Cantidad"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnCliente = new global::System.Data.DataColumn("Cliente", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCliente);
-                this.columnCompras = new global::System.Data.DataColumn("Compras", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCompras);
-                this.columnCliente.MaxLength = 50;
-                this.columnCompras.ReadOnly = true;
+                this.columnArticulo = new global::System.Data.DataColumn("Articulo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArticulo);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
+                this.columnArticulo.MaxLength = 50;
+                this.columnCantidad.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -476,7 +476,7 @@ namespace Ejercicio2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BajaLogicaDataSet2 ds = new BajaLogicaDataSet2();
+                BajaLogicaDataSet3 ds = new BajaLogicaDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -551,58 +551,58 @@ namespace Ejercicio2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Cliente {
+            public string Articulo {
                 get {
                     try {
-                        return ((string)(this[this.tableSP_DataSet.ClienteColumn]));
+                        return ((string)(this[this.tableSP_DataSet.ArticuloColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cliente\' de la tabla \'SP_DataSet\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Articulo\' de la tabla \'SP_DataSet\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSP_DataSet.ClienteColumn] = value;
+                    this[this.tableSP_DataSet.ArticuloColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Compras {
+            public int Cantidad {
                 get {
                     try {
-                        return ((int)(this[this.tableSP_DataSet.ComprasColumn]));
+                        return ((int)(this[this.tableSP_DataSet.CantidadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Compras\' de la tabla \'SP_DataSet\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cantidad\' de la tabla \'SP_DataSet\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSP_DataSet.ComprasColumn] = value;
+                    this[this.tableSP_DataSet.CantidadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsClienteNull() {
-                return this.IsNull(this.tableSP_DataSet.ClienteColumn);
+            public bool IsArticuloNull() {
+                return this.IsNull(this.tableSP_DataSet.ArticuloColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetClienteNull() {
-                this[this.tableSP_DataSet.ClienteColumn] = global::System.Convert.DBNull;
+            public void SetArticuloNull() {
+                this[this.tableSP_DataSet.ArticuloColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsComprasNull() {
-                return this.IsNull(this.tableSP_DataSet.ComprasColumn);
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableSP_DataSet.CantidadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetComprasNull() {
-                this[this.tableSP_DataSet.ComprasColumn] = global::System.Convert.DBNull;
+            public void SetCantidadNull() {
+                this[this.tableSP_DataSet.CantidadColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -641,7 +641,7 @@ namespace Ejercicio2 {
         }
     }
 }
-namespace Ejercicio2.BajaLogicaDataSet2TableAdapters {
+namespace Ejercicio2.Reportes.BajaLogicaDataSet3TableAdapters {
     
     
     /// <summary>
@@ -765,8 +765,8 @@ namespace Ejercicio2.BajaLogicaDataSet2TableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "SP_DataSet";
-            tableMapping.ColumnMappings.Add("Cliente", "Cliente");
-            tableMapping.ColumnMappings.Add("Compras", "Compras");
+            tableMapping.ColumnMappings.Add("Articulo", "Articulo");
+            tableMapping.ColumnMappings.Add("Cantidad", "Cantidad");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -792,7 +792,7 @@ namespace Ejercicio2.BajaLogicaDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BajaLogicaDataSet2.SP_DataSetDataTable dataTable) {
+        public virtual int Fill(BajaLogicaDataSet3.SP_DataSetDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -805,9 +805,9 @@ namespace Ejercicio2.BajaLogicaDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BajaLogicaDataSet2.SP_DataSetDataTable GetData() {
+        public virtual BajaLogicaDataSet3.SP_DataSetDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BajaLogicaDataSet2.SP_DataSetDataTable dataTable = new BajaLogicaDataSet2.SP_DataSetDataTable();
+            BajaLogicaDataSet3.SP_DataSetDataTable dataTable = new BajaLogicaDataSet3.SP_DataSetDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -881,7 +881,7 @@ namespace Ejercicio2.BajaLogicaDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(BajaLogicaDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(BajaLogicaDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -891,7 +891,7 @@ namespace Ejercicio2.BajaLogicaDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(BajaLogicaDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(BajaLogicaDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -901,7 +901,7 @@ namespace Ejercicio2.BajaLogicaDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(BajaLogicaDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(BajaLogicaDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -935,7 +935,7 @@ namespace Ejercicio2.BajaLogicaDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(BajaLogicaDataSet2 dataSet) {
+        public virtual int UpdateAll(BajaLogicaDataSet3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
