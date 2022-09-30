@@ -13,7 +13,7 @@ namespace RecetasSLN.dominio
         public string Nombre { get; set; }
         public string TipoReceta { get; set; }
         public string Cheff { get; set; }
-        List<DetalleReceta> ListDetalles { get; set; }
+        public List<DetalleReceta> ListDetalles { get; set; }
 
         public Receta()
         {

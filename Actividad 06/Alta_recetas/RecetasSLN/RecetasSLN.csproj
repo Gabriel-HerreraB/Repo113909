@@ -50,11 +50,11 @@
     <Compile Include="dominio\DetalleReceta.cs" />
     <Compile Include="dominio\Ingredientes.cs" />
     <Compile Include="dominio\Receta.cs" />
-    <Compile Include="presentación\Form1.cs">
+    <Compile Include="presentación\FrmAltaRecetas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentación\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="presentación\FrmAltaRecetas.Designer.cs">
+      <DependentUpon>FrmAltaRecetas.cs</DependentUpon>
     </Compile>
     <Compile Include="presentación\FrmConsultarRecetas.cs">
       <SubType>Form</SubType>
@@ -64,8 +64,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="presentación\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="presentación\FrmAltaRecetas.resx">
+      <DependentUpon>FrmAltaRecetas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentación\FrmConsultarRecetas.resx">
       <DependentUpon>FrmConsultarRecetas.cs</DependentUpon>

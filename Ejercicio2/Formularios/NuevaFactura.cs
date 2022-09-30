@@ -73,14 +73,14 @@ namespace Ejercicio2
             if (txtCantidad.Text == "")
             {MessageBox.Show("Debe ingresar una cantidad", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; }
-            //foreach (DataGridViewRow row in dgvDetalle.Rows)
-            //{
-            //    if(row.Cells["Articulo"].Value.ToString().Equals(cboArticulo.Text))
-            //    {
-            //        MessageBox.Show("PRODUCTO: " + cboArticulo.Text + "ya se encuentra como detalle!", "Control",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            //        return;
-            //    }
-            //}
+            foreach (DataGridViewRow row in dgvDetalle.Rows)
+            {
+                if (row.Cells["Articulo"].Value.ToString().Equals(cboArticulo.Text))
+                {
+                    MessageBox.Show("PRODUCTO: " + cboArticulo.Text + "ya se encuentra como detalle!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+            }
             DataRowView item = (DataRowView)cboArticulo.SelectedItem; //desde el dataRow traes los datos de un articulo
             int cod = Convert.ToInt32(item.Row.ItemArray[0]);
             string nom  = Convert.ToString(item.Row.ItemArray[1]);

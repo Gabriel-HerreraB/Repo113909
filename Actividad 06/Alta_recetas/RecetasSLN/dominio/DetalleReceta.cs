@@ -8,6 +8,12 @@ namespace RecetasSLN.dominio
 {
     internal class DetalleReceta
     {
+        public DetalleReceta(Ingredientes ing, int cantidad)
+        {
+            Cantidad = cantidad;
+            Ingrediente = ing;
+        }
+
         public Ingredientes Ingrediente { get; set; }
         public int Cantidad { get; set; }
     }
