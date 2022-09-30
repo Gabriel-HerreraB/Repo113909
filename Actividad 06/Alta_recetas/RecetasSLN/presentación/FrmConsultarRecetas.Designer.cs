@@ -175,6 +175,7 @@ namespace RecetasSLN.presentación
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnNuevo
             // 
@@ -184,6 +185,7 @@ namespace RecetasSLN.presentación
             this.btnNuevo.TabIndex = 6;
             this.btnNuevo.Text = "Nueva Receta";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // FrmConsultarRecetas
             // 

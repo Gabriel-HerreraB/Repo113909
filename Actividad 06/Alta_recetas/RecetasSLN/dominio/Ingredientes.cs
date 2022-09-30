@@ -8,10 +8,15 @@ namespace RecetasSLN.dominio
 {
     internal class Ingredientes
     {
+        public Ingredientes(int cod, string nom, string cant)
+        {
+            IdIngrediente = cod;
+            Nombre = nom;
+            Unidad = cant;
+        }
+
         public int IdIngrediente { get; set; }
         public string Nombre { get; set; }
-        public double Unidad { get; set; }
-
-
+        public string Unidad { get; set; }
     }
 }

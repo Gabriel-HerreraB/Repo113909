@@ -21,5 +21,16 @@ namespace RecetasSLN.presentación
         {
 
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            FrmAltaRecetas AltaRecetas = new FrmAltaRecetas();
+            AltaRecetas.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
