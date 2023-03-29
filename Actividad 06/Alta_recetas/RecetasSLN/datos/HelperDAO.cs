@@ -50,7 +50,7 @@ namespace RecetasSLN.datos
         {
             cnn.Open();
             cmd = new SqlCommand("SP_CANTIDAD_RECETAS", cnn);
-            cmd.Connection = cnn;
+            //cmd.Connection = cnn;
             cmd.CommandType = CommandType.StoredProcedure;
             SqlParameter param = new SqlParameter("@CantidadRecetas", SqlDbType.Int);
             param.Direction = ParameterDirection.Output;

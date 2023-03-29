@@ -23,12 +23,6 @@ namespace RecetasSLN.presentación
             CargarTipoReceta();
             ProximaReceta();
             recetaN = new Receta();
-
-            txtNombre.Text = string.Empty;
-            txtChef.Text = string.Empty;
-            cboTipoR.SelectedIndex = -1;
-            cboIngredientes.SelectedIndex = -1;
-
         }
 
         private void CargarTipoReceta()
@@ -129,6 +123,14 @@ namespace RecetasSLN.presentación
         {
             if(MessageBox.Show("Si cancela perdera todo lo cargado! Seguro de cancelar?", "Cancelar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             this.Close();
+        }
+
+        private void FrmAltaRecetas_Load(object sender, EventArgs e)
+        {
+            txtNombre.Text = string.Empty;
+            txtChef.Text = string.Empty;
+            cboTipoR.SelectedIndex = -1;
+            cboIngredientes.SelectedIndex = -1;
         }
     }
 }

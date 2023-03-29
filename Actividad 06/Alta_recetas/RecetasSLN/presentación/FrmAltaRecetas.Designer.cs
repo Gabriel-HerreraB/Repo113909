@@ -228,6 +228,7 @@
             this.Controls.Add(this.cboTipoR);
             this.Name = "FrmAltaRecetas";
             this.Text = "Alta Recetas";
+            this.Load += new System.EventHandler(this.FrmAltaRecetas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.ResumeLayout(false);
